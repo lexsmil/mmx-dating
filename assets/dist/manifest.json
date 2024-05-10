@@ -1,0 +1,136 @@
+{
+  "_api-BRZhL1mr.js": {
+    "file": "assets/api-BRZhL1mr.js",
+    "name": "api",
+    "imports": [
+      "_vue-CpDYiDUc.js"
+    ]
+  },
+  "_request.vue_vue_type_script_setup_true_lang-CA-6qwty.js": {
+    "file": "assets/request.vue_vue_type_script_setup_true_lang-CA-6qwty.js",
+    "name": "request.vue_vue_type_script_setup_true_lang",
+    "imports": [
+      "_vue-bootstrap-DcD6sp94.js",
+      "_vesp-_75zYqsD.js",
+      "src/mgr.ts",
+      "_vue-CpDYiDUc.js"
+    ]
+  },
+  "_vesp-_75zYqsD.js": {
+    "file": "assets/vesp-_75zYqsD.js",
+    "name": "vesp",
+    "imports": [
+      "_vue-bootstrap-DcD6sp94.js",
+      "_vue-CpDYiDUc.js",
+      "_vue-router-C64HCaoO.js",
+      "_api-BRZhL1mr.js"
+    ]
+  },
+  "_vue-CpDYiDUc.js": {
+    "file": "assets/vue-CpDYiDUc.js",
+    "name": "vue"
+  },
+  "_vue-bootstrap-DcD6sp94.js": {
+    "file": "assets/vue-bootstrap-DcD6sp94.js",
+    "name": "vue-bootstrap",
+    "imports": [
+      "_vue-CpDYiDUc.js"
+    ]
+  },
+  "_vue-datepicker-Cd25zXUy.js": {
+    "file": "assets/vue-datepicker-Cd25zXUy.js",
+    "name": "vue-datepicker",
+    "imports": [
+      "_vue-CpDYiDUc.js"
+    ]
+  },
+  "_vue-router-C64HCaoO.js": {
+    "file": "assets/vue-router-C64HCaoO.js",
+    "name": "vue-router",
+    "imports": [
+      "_vue-CpDYiDUc.js"
+    ]
+  },
+  "src/mgr.ts": {
+    "file": "assets/mgr-ByBqnCpz.js",
+    "name": "mgr",
+    "src": "src/mgr.ts",
+    "isEntry": true,
+    "imports": [
+      "_vue-CpDYiDUc.js",
+      "_vue-router-C64HCaoO.js",
+      "_vesp-_75zYqsD.js",
+      "_vue-datepicker-Cd25zXUy.js",
+      "_vue-bootstrap-DcD6sp94.js",
+      "_api-BRZhL1mr.js"
+    ],
+    "dynamicImports": [
+      "src/mgr/pages/request.vue",
+      "src/mgr/pages/request/create.vue",
+      "src/mgr/pages/request/[id]/edit.vue"
+    ],
+    "css": [
+      "assets/mgr-CyvTXM-J.css"
+    ]
+  },
+  "src/mgr/pages/request.vue": {
+    "file": "assets/request-DlcBdRLn.js",
+    "name": "request",
+    "src": "src/mgr/pages/request.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vesp-_75zYqsD.js",
+      "_vue-bootstrap-DcD6sp94.js",
+      "_api-BRZhL1mr.js",
+      "src/mgr.ts",
+      "_vue-CpDYiDUc.js",
+      "_vue-router-C64HCaoO.js",
+      "_vue-datepicker-Cd25zXUy.js"
+    ]
+  },
+  "src/mgr/pages/request/[id]/edit.vue": {
+    "file": "assets/edit-DVuvFYa3.js",
+    "name": "edit",
+    "src": "src/mgr/pages/request/[id]/edit.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vesp-_75zYqsD.js",
+      "_request.vue_vue_type_script_setup_true_lang-CA-6qwty.js",
+      "_vue-router-C64HCaoO.js",
+      "_api-BRZhL1mr.js",
+      "_vue-CpDYiDUc.js",
+      "_vue-bootstrap-DcD6sp94.js",
+      "src/mgr.ts",
+      "_vue-datepicker-Cd25zXUy.js"
+    ]
+  },
+  "src/mgr/pages/request/create.vue": {
+    "file": "assets/create-ZC0A7tYF.js",
+    "name": "create",
+    "src": "src/mgr/pages/request/create.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vesp-_75zYqsD.js",
+      "_request.vue_vue_type_script_setup_true_lang-CA-6qwty.js",
+      "_api-BRZhL1mr.js",
+      "_vue-CpDYiDUc.js",
+      "_vue-bootstrap-DcD6sp94.js",
+      "_vue-router-C64HCaoO.js",
+      "src/mgr.ts",
+      "_vue-datepicker-Cd25zXUy.js"
+    ]
+  },
+  "src/web.ts": {
+    "file": "assets/web-CpDsc3Eq.js",
+    "name": "web",
+    "src": "src/web.ts",
+    "isEntry": true,
+    "imports": [
+      "_vue-CpDYiDUc.js",
+      "_api-BRZhL1mr.js"
+    ],
+    "css": [
+      "assets/web-DiyFmQMB.css"
+    ]
+  }
+}
