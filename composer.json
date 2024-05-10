@@ -2,6 +2,7 @@
   "name": "mmx/dating",
   "type": "library",
   "license": "MIT",
+  "version": "0.0.1",
   "description": "Template for creating a new dating application",
   "authors": [
     {
