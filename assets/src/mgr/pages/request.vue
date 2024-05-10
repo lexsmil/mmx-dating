@@ -28,7 +28,7 @@
       </BCol>
     </BRow>
 
-    <MmxTable ref="table" v-bind="{url, fields, headerActions, tableActions, filters, rowClass}">
+    <MmxTable ref="table" v-bind="{url, fields, headerActions, tableActions, filters, rowClass, sort, dir}">
       <RouterView />
     </MmxTable>
   </div>
@@ -37,6 +37,8 @@
 <script setup lang="ts">
 const url = 'mgr/requests'
 const table = ref()
+const sort = 'id'
+const dir = 'desc'
 const headerActions = computed(() => {
   return [{route: {name: 'request-create'}, icon: 'plus', title: $t('models.request.title_one')}]
 })
