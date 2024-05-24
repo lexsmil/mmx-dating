@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use MMX\Dating\Models\Event;
 use Vesp\Controllers\ModelGetController;
 
-class Items extends ModelGetController
+class Events extends ModelGetController
 {
     protected string $model = Event::class;
 

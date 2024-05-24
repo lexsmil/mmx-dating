@@ -110,7 +110,7 @@ class App
         $app->group(
             '/web',
             static function (RouteCollectorProxy $group) {
-//                $group->map(['OPTIONS', 'GET'], '/items[/{id:\d+}]', Controllers\Web\Items::class);
+//                $group->map(['OPTIONS', 'GET'], '/events[/{id:\d+}]', Controllers\Web\Events::class);
             }
         );
     }

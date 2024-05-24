@@ -16,8 +16,8 @@ final class Events extends AbstractMigration
             static function (Blueprint $table) {
                 $table->id();
                 $table->string('title')->unique();
-                $table->dateTimeTz('date_start');
-                $table->dateTimeTz('date_end')->nullable();
+                $table->timestamp('date_start');
+                $table->timestamp('date_end')->nullable();
                 $table->unsignedInteger('rank')->default(0);
                 $table->boolean('active')->default(true);
                 $table->timestamps();

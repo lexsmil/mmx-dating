@@ -23,10 +23,13 @@ class Event extends Model
     protected $table = 'mmx_dating_events';
     protected $guarded = ['id', 'created_at', 'updated_at'];
 //    protected $dateFormat = 'Y-m-d H:i:s';
-    protected $dates = ['date_start', 'date_end'];
+
+//    protected $dates = ['date_start', 'date_end'];
 
     protected $casts = [
         'active' => 'bool',
+        'date_start' => 'datetime',
+        'date_end' => 'datetime',
     ];
 
     public function requests(): HasMany {

@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import {Ref} from 'vue'
 
-const url = 'web/items'
+const url = 'web/events'
 const total = ref(0)
 const items: Ref<Record<string, any>[]> = ref([])
 
@@ -20,7 +20,7 @@ onMounted(async () => {
     total.value = data.total
     items.value = data.rows
 
-    useToastSuccess('Items was loaded successfully!')
+    // useToastSuccess('Items was loaded successfully!')
   } catch (e) {}
 })
 </script>

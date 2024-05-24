@@ -9,7 +9,7 @@
         v-model="record.date_start"
         time-picker-inline
         locale="ru-RU"
-        model-type="yyyy-MM-dd HH:mm:ss"
+        model-type="iso"
         format="dd.MM.yyyy HH:mm"
         select-text="Выбрать"
         cancel-text="Отмена"
