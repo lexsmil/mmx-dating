@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@vesp/mmx-frontend": "^1.6.2",
-    "@vuepic/vue-datepicker": "^8.5.1",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-flatpickr-component": "^11.0.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",

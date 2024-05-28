@@ -22,7 +22,6 @@ export default withMmx('mmx-dating', {
           vue: ['vue'],
           'vue-router': ['vue-router'],
           'vue-bootstrap': ['bootstrap-vue-next'],
-          'vue-datepicker': ['@vuepic/vue-datepicker'],
         },
       },
     },

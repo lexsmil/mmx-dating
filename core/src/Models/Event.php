@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property int $id
  * @property string $title
  * @property Carbon $date_start
- * @property Carbon $date_end
+ * @property ?Carbon $date_end
  * @property int $rank
  * @property bool $active
  * @property Carbon $created_at
@@ -22,14 +22,11 @@ class Event extends Model
 {
     protected $table = 'mmx_dating_events';
     protected $guarded = ['id', 'created_at', 'updated_at'];
-//    protected $dateFormat = 'Y-m-d H:i:s';
-
-//    protected $dates = ['date_start', 'date_end'];
 
     protected $casts = [
         'active' => 'bool',
-        'date_start' => 'datetime',
-        'date_end' => 'datetime',
+        'date_start' => 'datetime:Y-m-d H:i:s',
+        'date_end' => 'datetime:Y-m-d H:i:s',
     ];
 
     public function requests(): HasMany {

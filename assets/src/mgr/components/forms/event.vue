@@ -5,15 +5,11 @@
     </BFormGroup>
 
     <BFormGroup :label="$t('models.event.date_start')">
-      <VueDatePicker
-        v-model="record.date_start"
-        time-picker-inline
-        locale="ru-RU"
-        model-type="iso"
-        format="dd.MM.yyyy HH:mm"
-        select-text="Выбрать"
-        cancel-text="Отмена"
-      ></VueDatePicker>
+      <FlatPickr v-model="record.date_start" :config="config" class="form-control" />
+    </BFormGroup>
+
+    <BFormGroup :label="$t('models.event.date_end')">
+      <FlatPickr v-model="record.date_end" :config="config" class="form-control" />
     </BFormGroup>
 
     <BFormGroup class="mt-3">
@@ -38,5 +34,15 @@ const record: any = computed({
   set(newValue: number) {
     emit('update:modelValue', newValue)
   },
+})
+
+const config = ref({
+  wrap: true, // set wrap to true only when using 'input-group'
+  altFormat: 'd.m.Y H:i',
+  altInput: true,
+  dateFormat: 'Y-m-d H:i', // U - timestamp, Z - ISO format
+  // dateFormat: 'U', // U - timestamp, Z - ISO format
+  enableTime: true,
+  time_24hr: true,
 })
 </script>
